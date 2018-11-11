@@ -1,0 +1,22 @@
+<h1>Welcome#index</h1>
+<p>Find me in app/views/welcome/index.html.erb</p>
+
+<br>
+
+<h2>List of all instructors</h2>
+<% @instructors.each do |i| %>
+<div>
+  <p><%= i.email %></p>
+  <p><%= i.fname.to_s + " " + i.lname.to_s %></p>
+  <hr>
+</div>
+<% end %>
+
+<h2>List of all students</h2>
+<% @students.each do |s| %>
+<div>
+  <p><%= s.email %></p>
+  <p><%= s.fname.to_s + " " + s.lname.to_s %></p>
+  <hr>
+</div>
+<% end %>
